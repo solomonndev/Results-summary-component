@@ -1,0 +1,259 @@
+@font-face {
+  font-family: "Haken";
+  src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Haken";
+  src: url(/assets/fonts/static/HankenGrotesk-Bold.ttf) format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Haken";
+  src: url(/assets/fonts/static/HankenGrotesk-ExtraBold.ttf) format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Haken";
+  src: url(/assets/fonts/static/HankenGrotesk-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+* {
+  font-family: "Haken", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+}
+.section-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+  height: 243px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 1px 15px 40px 0 rgba(176, 189, 240, 0.5);
+}
+
+.section-child1 {
+  justify-content: center;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 0px;
+  text-align: center;
+  justify-content: space-between;
+  max-width: 170px;
+  color: white;
+}
+.section-child1 .child1-p {
+  font-size: 13px;
+}
+.oval-section {
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 100px;
+  height: 100px;
+  padding: 20px 10px;
+  border-radius: 50px;
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  align-self: center;
+}
+.oval-section h1 {
+  font-size: 28px;
+}
+.oval-section p {
+  font-size: 8px;
+  color: rgb(183, 180, 180);
+}
+.section-child1-p1 {
+  font-size: 15px;
+}
+.section-child1-p2 {
+  font-size: 9px;
+  padding: 0 15px;
+  color: rgb(183 180, 180);
+}
+.section-child2 {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 10px;
+
+  justify-content: space-between;
+  width: 160px;
+  height: 245px;
+}
+.section-child2 h4 {
+  color: rgb(70, 68, 68);
+}
+
+.section-child2 .reaction {
+  display: flex;
+  border-radius: 5px;
+}
+.reaction{
+    justify-content: space-between;
+}
+.section-child2 p {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px;
+}
+.reaction1 {
+  background-color: hsl(0, 100%, 98%);
+}
+.reaction1 .recp1 {
+  color: hsl(0, 100%, 67%);
+}
+.reaction1 .rec-one {
+  padding-left: 20px;
+  font-size: 12px;
+}
+.rec-spa {
+  color: rgb(169, 166, 166);
+}
+.mem {
+  color: hsl(39, 100%, 56%);
+}
+.rec-mem {
+  background-color: hsl(41, 73%, 96%);
+}
+.ver {
+  color: hsl(166, 100%, 37%);
+}
+.rec-ver {
+  background-color: hsl(164, 61%, 94%);
+}
+.rec-vis .child-number {
+  font-size: 12px;
+}
+.rec-vis {
+  background-color: hsl(232, 67%, 93%);
+}
+.rec-vis .vis {
+  color: hsl(234, 85%, 45%);
+}
+.wrap{
+    display: flex;
+  }
+.sum-btn {
+  color: white;
+  background-color: hsl(224, 30%, 27%);
+  font-size: 12px;
+  padding: 5px 0px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+.sum-btn:hover {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+  body {
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+  }
+
+  .section-main {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: block;
+    max-width: 100%;
+  }
+
+  .section-child1 {
+    border-radius: 0;
+    max-width: 100%;
+    padding: 15px;
+    height: 300px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+
+  .oval-section {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+  }
+
+  .section-child1-p1 {
+    font-size: 20px;
+  }
+
+  .section-child1-p2 {
+    font-size: 15px;
+    padding: 0;
+  }
+
+  .section-child2 {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .section-child2 h4 {
+    font-size: 20px;
+  }
+
+  .reaction {
+    padding: 8px 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-between;
+  }
+ .reaction1 {
+  background-color: hsl(0, 100%, 98%);
+}
+.rec-mem {
+  background-color: hsl(41, 73%, 96%);
+}
+.rec-ver {
+  background-color: hsl(164, 61%, 94%);
+}
+
+.rec-vis {
+  background-color: hsl(232, 67%, 93%);
+}
+
+.wrap{
+    gap: 8px;
+}
+.section-main {
+  
+  box-shadow: none;
+}
+  .sum-btn {
+    height: 35px;
+  }
+  
+}
+
